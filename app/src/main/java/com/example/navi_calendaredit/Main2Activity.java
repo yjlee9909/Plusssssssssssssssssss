@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.example.navi_calendaredit.calendar.CalendarFragment;
+import com.example.navi_calendaredit.ui.home.FindFoodFragment;
 import com.example.navi_calendaredit.ui.home.FoodFragment;
 import com.example.navi_calendaredit.ui.home.HomeFragment;
 import com.example.navi_calendaredit.ui.home.PublicartFragment;
@@ -68,10 +69,19 @@ public class Main2Activity extends AppCompatActivity implements NavigationView.O
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new BusFragment()).commit();
                 break;
+            case R.id.nav_disabled_person:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new DisabledFragment()).commit();
+                break;
 
             case R.id.nav_food:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new FoodFragment()).commit();
+                break;
+
+            case R.id.nav_find_food:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new FindFoodFragment()).commit();
                 break;
 
             case R.id.nav_storytelling:

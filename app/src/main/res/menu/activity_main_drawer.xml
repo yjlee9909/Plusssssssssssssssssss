@@ -31,6 +31,10 @@
             <item android:id="@+id/nav_bus"
                 android:icon="@drawable/ic_directions_bus_black_24dp"
                 android:title="버스" />
+
+             <item android:id="@+id/nav_disabled_person"
+                 android:icon="@drawable/ic_disabled_person"
+                 android:title="장애인 편의시설 보유 업소"/>
          </menu>
     </item>
     <item android:title="음식점">
@@ -39,6 +43,11 @@
             <item android:id="@+id/nav_food"
                 android:icon="@drawable/ic_food"
                 android:title="모범음식점"/>
+
+            <item android:id="@+id/nav_find_food"
+                android:icon="@drawable/ic_find_food"
+                android:title="모범음식점 검색하기"/>
+
         </menu>
 
     </item>

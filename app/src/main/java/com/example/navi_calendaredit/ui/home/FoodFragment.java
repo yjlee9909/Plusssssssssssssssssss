@@ -65,7 +65,7 @@ public class FoodFragment extends Fragment {
 
         try{
             URL url = new URL("http://apis.data.go.kr/6260000/BusanTblFnrstrnStusService/getTblFnrstrnStusInfo?"
-                    + "numOfRows=15&pageNo=1&serviceKey="
+                    + "numOfRows=100&pageNo=1&serviceKey="
                     + "NO2EbE%2Bu5KtWhuLp1rQALIAtWWnRDgj9mCuelgBAxRS%2Frxi12vyAMLBp%2F3KEanPiRfbO3hwggbbpZ%2B0XtKIolQ%3D%3D"
             );
             XmlPullParserFactory parserCreator = XmlPullParserFactory.newInstance();
